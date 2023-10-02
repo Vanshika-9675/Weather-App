@@ -1,0 +1,196 @@
+*,*::after,*::before{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Rubik', sans-serif;
+}
+.wrapper{
+        width: 100vw;
+        height: 100vh;
+        color: white; 
+        background: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+}
+h1{
+        text-align: center;
+        padding: 20px;
+}
+.tab-container{
+        width: 90%;
+        max-width: 550px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 4rem;
+}
+
+.tab{
+        cursor: pointer;
+        font-size: 0.87rem;
+        letter-spacing: 1.75px;
+        padding: 5px 8px;
+}
+.tab.currentTab{
+        background-color: rgba(219,226,239,0.5);
+        border-radius: 4px;
+}
+.weather-container{
+        margin-block: 2rem;
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; */
+}
+.btn{   
+        all: unset;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        background-color: #3572AF;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px 30px;
+        margin-bottom: 10px;
+}
+
+.sub-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.grant-location-container{
+     display: none;
+}
+.grant-location-container.active{
+        display: flex;
+}
+.grant-location-container img{
+     margin-bottom: 2rem;
+}
+.grant-location-container p:first-of-type{
+   text-transform: uppercase;
+   font-size: 1.75 rem;
+   font-weight: 600;
+   word-spacing: 5px;
+}
+.grant-location-container p:last-of-type{
+   font-size: 0.85 rem;
+   font-weight: 500;
+   margin-top: 0.75rem;
+   margin-bottom: 1.75rem;
+   letter-spacing: 0.75px;
+}
+.loading-container{
+        display: none;
+}
+.loading-container.active{
+        display: flex;
+}
+.loading-container p{
+       text-transform: uppercase;
+}
+.user-info-container{
+        display: none;
+}
+.user-info-container.active{
+        display: flex;
+}
+.user-info-container .name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 0.5rem;
+}
+.name:nth-child(1){
+        font-size: 2rem;
+}
+.user-info-container p{
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+.user-info-container img{
+            width: 90px;
+            height: 90px;
+}
+.name img{
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+}
+.user-info-container p[data-temp]{
+        font-size: 2.75rem;
+        font-weight: 500;
+}
+.parameter-container{
+        display: flex;
+        flex-direction: row;
+        gap: 10px 20px;
+        justify-content: center;
+        margin-top: 2rem;
+}
+.parameter{
+        width: 30%;
+        max-width: 200px;
+        background-color: rgba(219,226,239,0.5);
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.parameter img{
+        width: 50px;
+        height: 50px;
+}
+.parameter p:first-of-type{
+        text-transform:uppercase;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.75px;
+}
+.parameter p:last-of-type{
+        font-size: 1rem;
+        font-weight: 400;
+}
+.formalign{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 10px;
+}
+.form-container{
+        display: none;
+        width: 90%;
+        max-width: 550px;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+}
+.form-container.active{
+        display: flex;
+}
+.form-container input{
+        all: unset;
+        width: calc(100% - 80px);
+        height: 40px;
+        padding: 0 20px;
+        background-color: rgba(219,226,239,0.5);
+        border-radius: 10px;
+}
+.form-container input::placeholder{
+        color: rgba(255,255,255,0.7); 
+}
+.form-container input:focus{
+        outline: 3px solid rgba(255,255,255,0.7);
+}
+.form-container .btn{
+      margin: unset;
+      padding: unset;
+      padding: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.form-container .btn img{
+        align-self: center;
+}
